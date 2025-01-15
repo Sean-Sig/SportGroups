@@ -2,14 +2,17 @@ import SwiftUI
 
 struct RootTabView: View {
 
-    let rootTabItems: [RootTabItem] = [.home]
+    let rootTabItems: [RootTabItem] = [.home, .settings]
 
     var body: some View {
         TabView {
             ForEach(rootTabItems, id: \.self) { tabItem in
                 switch tabItem {
                 case .home:
-                    squadsRootTabView
+                    homeRootTabView
+                        .tag(tabItem)
+                case .settings:
+                    settingsRootTabView
                         .tag(tabItem)
                 }
             }
@@ -18,13 +21,23 @@ struct RootTabView: View {
 }
 
 private extension RootTabView {
-    var squadsRootTabView: some View {
+    var homeRootTabView: some View {
         HomeNavigationView()
             .tabItem {
                 Label {
-                    Text("Squads")
+                    Text("Home")
                 } icon: {
-                    Image(systemName: "person.3")
+                    Image(systemName: "house.fill")
+                }
+            }
+    }
+    var settingsRootTabView: some View {
+        SettingsNavigationView()
+            .tabItem {
+                Label {
+                    Text("Profile")
+                } icon: {
+                    Image(systemName: "person.circle")
                 }
             }
     }

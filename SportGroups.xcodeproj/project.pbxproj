@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3085BEC32D36BAC000D74B17 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 3085BEC22D36BAC000D74B17 /* Home */; };
+		309FAD612D37FD9D0032860F /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 309FAD602D37FD9D0032860F /* Settings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Features/Home,
+				Features/Settings,
 			);
 			target = 3085BE8C2D36B30F00D74B17 /* SportGroups */;
 		};
@@ -41,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3085BEC32D36BAC000D74B17 /* Home in Frameworks */,
+				309FAD612D37FD9D0032860F /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 			name = SportGroups;
 			packageProductDependencies = (
 				3085BEC22D36BAC000D74B17 /* Home */,
+				309FAD602D37FD9D0032860F /* Settings */,
 			);
 			productName = SportGroups;
 			productReference = 3085BE8D2D36B30F00D74B17 /* SportGroups.app */;
@@ -396,6 +400,10 @@
 		3085BEC22D36BAC000D74B17 /* Home */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Home;
+		};
+		309FAD602D37FD9D0032860F /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Settings;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
