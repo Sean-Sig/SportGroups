@@ -2,6 +2,7 @@ import Foundation
 
 enum RootTabItem: Int {
     case home
+    case settings
 }
 
 extension RootTabItem: Identifiable {
