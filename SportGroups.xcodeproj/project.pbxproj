@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3085BEC32D36BAC000D74B17 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 3085BEC22D36BAC000D74B17 /* Home */; };
 		309FAD612D37FD9D0032860F /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 309FAD602D37FD9D0032860F /* Settings */; };
+		309FAD712D3804A70032860F /* SquadGroups in Frameworks */ = {isa = PBXBuildFile; productRef = 309FAD702D3804A70032860F /* SquadGroups */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 			membershipExceptions = (
 				Features/Home,
 				Features/Settings,
+				Features/SquadGroups,
 			);
 			target = 3085BE8C2D36B30F00D74B17 /* SportGroups */;
 		};
@@ -44,6 +46,7 @@
 			files = (
 				3085BEC32D36BAC000D74B17 /* Home in Frameworks */,
 				309FAD612D37FD9D0032860F /* Settings in Frameworks */,
+				309FAD712D3804A70032860F /* SquadGroups in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 			packageProductDependencies = (
 				3085BEC22D36BAC000D74B17 /* Home */,
 				309FAD602D37FD9D0032860F /* Settings */,
+				309FAD702D3804A70032860F /* SquadGroups */,
 			);
 			productName = SportGroups;
 			productReference = 3085BE8D2D36B30F00D74B17 /* SportGroups.app */;
@@ -404,6 +408,10 @@
 		309FAD602D37FD9D0032860F /* Settings */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Settings;
+		};
+		309FAD702D3804A70032860F /* SquadGroups */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SquadGroups;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

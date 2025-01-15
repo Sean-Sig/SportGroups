@@ -2,7 +2,7 @@ import SwiftUI
 
 struct RootTabView: View {
 
-    let rootTabItems: [RootTabItem] = [.home, .settings]
+    let rootTabItems: [RootTabItem] = [.home, .settings, .squadGroups]
 
     var body: some View {
         TabView {
@@ -13,6 +13,9 @@ struct RootTabView: View {
                         .tag(tabItem)
                 case .settings:
                     settingsRootTabView
+                        .tag(tabItem)
+                case .squadGroups:
+                    squadGroupsRootTabView
                         .tag(tabItem)
                 }
             }
@@ -38,6 +41,16 @@ private extension RootTabView {
                     Text("Profile")
                 } icon: {
                     Image(systemName: "person.circle")
+                }
+            }
+    }
+    var squadGroupsRootTabView: some View {
+        SquadGroupsNavigationView()
+            .tabItem {
+                Label {
+                    Text("Squads")
+                } icon: {
+                    Image(systemName: "person.3")
                 }
             }
     }
