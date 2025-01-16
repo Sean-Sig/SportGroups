@@ -4,7 +4,7 @@ import Settings
 struct SettingsNavigationView: View {
     var body: some View {
         NavigationView {
-            SettingsScreenView()
+            SettingsScreen()
         }
     }
 }

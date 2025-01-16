@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct SettingsScreenView: View {
+public struct SettingsScreen: View {
     public init() {}
 
     public var body: some View {
@@ -13,6 +13,6 @@ public struct SettingsScreenView: View {
 
 #if DEBUG
 #Preview {
-    SettingsScreenView()
+    SettingsScreen()
 }
 #endif
