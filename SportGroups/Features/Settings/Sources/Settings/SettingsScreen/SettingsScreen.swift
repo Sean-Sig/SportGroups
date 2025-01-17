@@ -5,8 +5,13 @@ public struct SettingsScreen: View {
 
     public var body: some View {
         VStack(spacing: 0) {
-            Text("Settings Screen")
+            SettingsListView(
+                settingsListModel: SettingsListModel(
+                    settingRows: [.settingMock]
+                )
+            )
         }
+        .padding()
         .navigationTitle("Profile & Settings")
     }
 }
