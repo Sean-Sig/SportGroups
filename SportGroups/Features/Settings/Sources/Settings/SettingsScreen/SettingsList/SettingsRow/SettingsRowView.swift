@@ -7,6 +7,8 @@ struct SettingsRowView: View {
         HStack(spacing: 8) {
             Image(systemName: settingsRowModel.imageIcon)
             Text(settingsRowModel.settingName)
+            Spacer()
+            Image(systemName: "chevron.right")
         }
     }
 }
