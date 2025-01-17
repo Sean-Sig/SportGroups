@@ -4,7 +4,7 @@ import SquadGroups
 struct SquadGroupsNavigationView: View {
     var body: some View {
         NavigationView {
-            SquadGroupScreenView()
+            SquadGroupScreen()
         }
     }
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct HomeScreenView: View {
+public struct HomeScreen: View {
     public init() {}
 
     public var body: some View {
@@ -13,6 +13,6 @@ public struct HomeScreenView: View {
 
 #if DEBUG
 #Preview {
-    HomeScreenView()
+    HomeScreen()
 }
 #endif

@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct SquadGroupScreenView: View {
+public struct SquadGroupScreen: View {
     public init() {}
 
     public var body: some View {
@@ -13,6 +13,6 @@ public struct SquadGroupScreenView: View {
 
 #if DEBUG
 #Preview {
-    SquadGroupScreenView()
+    SquadGroupScreen()
 }
 #endif

@@ -4,7 +4,7 @@ import Home
 struct HomeNavigationView: View {
     var body: some View {
         NavigationView {
-            HomeScreenView()
+            HomeScreen()
         }
     }
 }
